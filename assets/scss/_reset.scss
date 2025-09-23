@@ -44,7 +44,7 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-content: center;
   height: auto;
@@ -53,20 +53,18 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  &.main--intro {
-    background: #0258ab;
-  }
 }
 
 .section {
   display: flex;
   position: relative;
   width: 100%;
-  flex: 1;
+  height: auto;
+  min-height: 100vh;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  align-content: center;
+  align-content: space-between;
 }
 
 img {
@@ -126,4 +124,16 @@ iframe {
 
 iframe::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.green {
+  color: var(--green);
+}
+
+.blue {
+  color: var(--blue);
 }

@@ -8,21 +8,24 @@
   align-items: center;
   align-content: center;
   position: relative;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1;
-  color: var(--white);
-  font-family: var(--bold);
-  padding: 10px 40px;
+  color: var(--blue-dark);
+  font-family: var(--got);
+  padding: 8px 40px 12px 40px;
   z-index: 1;
   user-select: none;
   outline: none;
   border-radius: 50px;
   text-transform: uppercase;
-  background: var(--color);
+  background: var(--white);
+  letter-spacing: -0.1em;
+  text-shadow: 1px 0 var(--blue-dark), -1px 0 var(--blue-dark), 0px 1px var(--blue-dark);
 
-  &.button--white {
-    background: var(--white);
-    color: var(--color);
+  &.button--blue {
+    background: var(--color);
+    color: var(--white);
+    text-shadow: 1px 0 var(--white), 0px 1px var(--white);
   }
 
   &.full {
@@ -31,12 +34,8 @@
   }
 
   &.small {
-    font-size: 24px;
-    min-height: 40px;
-    padding: 10px 20px;
-    @media (max-width: 359px) {
-      padding: 10px 10px;
-      font-size: 26px;
-    }
+    font-size: 18px;
+    min-height: 46px;
+    padding: 8px 20px 12px 20px;
   }
 }

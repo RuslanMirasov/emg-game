@@ -1,7 +1,5 @@
 .section--rules {
-  padding: 10px;
-  font-size: 12px;
-  color: var(--white);
+  background: url('../img/rules/bg.webp') no-repeat center center/cover;
 }
 
 .rules {
@@ -13,20 +11,29 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 10px;
+  gap: 16px;
+  padding: 30px 0px 20px 0px;
+  margin: auto;
   > li {
     display: flex;
     position: relative;
     width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    align-content: flex-end;
+    align-items: center;
+    align-content: center;
     gap: 4px 12px;
     text-align: center;
+    transform: translate(-20px, 0px);
+    &:nth-child(2n + 2) {
+      transform: translate(12px, 0px);
+    }
     p {
-      display: block;
-      width: 100%;
+      display: inline-block;
+      width: auto;
+      color: var(--blue);
+      font-size: 18px;
+      line-height: 1.2;
     }
 
     > ul {
@@ -44,76 +51,92 @@
         justify-content: center;
         align-items: center;
         align-content: center;
-        width: 50.22px;
-        height: 50.22px;
-        border-radius: 50.22px;
-        background: var(--white);
+        width: 52px;
+        height: 52px;
+        &:before {
+          content: '';
+          width: 100%;
+          height: 90%;
+          background: url('../img/svg/sota.svg') no-repeat center center/cover;
+          position: absolute;
+          z-index: 0;
+        }
+        img {
+          z-index: 1;
+        }
       }
     }
 
     &:before {
       content: '';
-      width: 30px;
-      height: 40px;
+      width: 42px;
+      height: 103px;
       position: absolute;
-      bottom: -4px;
-      background: url('../img/svg/arrow_rules.svg') no-repeat center center;
-      background-size: 100% 100%;
+      bottom: 50%;
+      background: url('../img/svg/arrow-down.svg') no-repeat center center/cover;
     }
 
     &:nth-child(1) {
-      max-width: 262px;
-      margin-right: auto;
-      margin-left: 10px;
-      padding: 14px 13px 8px 8px;
-      background: url('../img/svg/rule1.svg') no-repeat center center;
-      background-size: 100% 100%;
+      width: 281px;
+      height: 130px;
+      background: url('../img/rules/rule1-bg.webp') no-repeat center center/cover;
       &:before {
         left: 100%;
-        margin-left: 10px;
+        margin-left: -18px;
+        margin-bottom: -20px;
       }
     }
     &:nth-child(2) {
-      max-width: 254px;
-      margin-left: auto;
-      padding: 10px;
-      background: url('../img/svg/rule2.svg') no-repeat center center;
+      width: 300px;
+      height: 164px;
+      background: url('../img/rules/rule2-bg.webp') no-repeat center center;
       background-size: 100% 100%;
+      z-index: 2;
       img {
-        max-width: 154px;
-        height: 80px;
+        width: 158px;
+        height: 82px;
       }
       &:before {
         right: 100%;
-        transform: scaleX(-1);
+        margin-right: -17px;
+        margin-bottom: -20px;
       }
     }
     &:nth-child(3) {
-      max-width: 190px;
-      margin-right: auto;
-      margin-left: 10px;
-      padding: 15px 62px 18px 18px;
-      background: url('../img/svg/rule3.svg') no-repeat center center;
-      background-size: 100% 100%;
+      flex-direction: row;
+      gap: 10px;
+      width: 260px;
+      height: 90px;
+      background: url('../img/rules/rule3-bg.webp') no-repeat center center/cover;
       &:before {
         left: 100%;
-        margin-left: -10px;
+        margin-left: -18px;
+        margin-bottom: -20px;
       }
       img {
-        position: absolute;
-        right: 22px;
-        bottom: 4px;
-        width: 50px;
-        height: 50px;
+        width: 56px;
+        height: 56px;
       }
     }
     &:nth-child(4) {
-      padding: 8px 6px 10px 6px;
-      background: url('../img/svg/rule4.svg') no-repeat center center;
-      background-size: 100% 100%;
+      width: 325px;
+      height: 171px;
+      background: url('../img/rules/rule4-bg.webp') no-repeat center center/cover;
       &:before {
-        content: none;
+        right: 100%;
+        margin-right: -17px;
+        margin-bottom: -20px;
       }
     }
   }
+}
+
+.rules-images {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+  gap: 20px;
 }
