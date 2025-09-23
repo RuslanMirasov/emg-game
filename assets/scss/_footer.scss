@@ -30,6 +30,10 @@
   text-transform: none;
   color: inherit;
   border-bottom: 1px solid var(--white);
+  &.dark {
+    color: var(--color);
+    border-bottom: 1px solid var(--color);
+  }
 }
 
 .sound-button {
@@ -40,8 +44,14 @@
   right: 0px;
   bottom: 14px;
   flex-shrink: 0;
-  background: url('../img/svg/sound-mute.svg') no-repeat center center/cover;
+  background: #ffffff url('../img/svg/sound-mute.svg') no-repeat center center/cover;
   &.is-playing {
-    background: url('../img/svg/sound.svg') no-repeat center center/cover;
+    background: #ffffff url('../img/svg/sound.svg') no-repeat center center/cover;
+  }
+  &.sound-button--yellow {
+    background: #fde989 url('../img/svg/sound-mute.svg') no-repeat center center/cover;
+    &.is-playing {
+      background: #fde989 url('../img/svg/sound.svg') no-repeat center center/cover;
+    }
   }
 }

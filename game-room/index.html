@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/x-icon" href="./../assets/img/favicon.ico" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#001136" />
     <meta name="description" content="Игра" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
@@ -11,15 +11,16 @@
     <title>Игра</title>
   </head>
   <body class="body">
+    <!--PRELOADER-->
     <div class="preloader" data-preloader>
-      <strong>
-        <span class="preloader__video">
+      <div class="preloader__content">
+        <div class="preloader__video">
           <video autoplay loop muted playsinline preload="auto">
             <source src="./../assets/img/preloader.mp4" type="video/mp4" />
           </video>
-        </span>
+        </div>
         <span>Открываем<br />призовую<br />реальность</span>
-      </strong>
+      </div>
     </div>
 
     <main class="main">
@@ -29,42 +30,45 @@
         <div class="timer">
           <span data-timer>00:23,345</span>
         </div>
-        <iframe src="./../level-1/" class="level-iframe"></iframe>
-      </section>
 
-      <nav class="game-panel">
-        <p class="game-panel__score"><span>199 место</span></p>
-        <ul class="game-panel__counters">
-          <li>
-            <picture>
-              <img src="./../assets/img/game/1.webp" alt="" />
-            </picture>
-            <span>2/15</span>
-          </li>
-          <li>
-            <picture class="active">
-              <img src="./../assets/img/game/2.webp" alt="" />
-            </picture>
-            <span>4/15</span>
-          </li>
-          <li>
-            <picture class="done">
-              <img src="./../assets/img/game/3.webp" alt="" />
-            </picture>
-            <span>3/15</span>
-          </li>
-          <li>
-            <picture>
-              <img src="./../assets/img/game/4.webp" alt="" />
-            </picture>
-            <span>7/15</span>
-          </li>
-        </ul>
-        <footer class="footer">
-          <a href="#">Вернуться в розыгрыш</a>
-          <button class="sound-button" data-sound="./../assets/music/game.mp3"></button>
-        </footer>
-      </nav>
+        <iframe src="./../level-1/" class="level-iframe"></iframe>
+
+        <div class="game-panel">
+          <p class="game-panel__score">
+            <span><span class="yellow">199</span> МЕСТО</span>
+          </p>
+          <ul class="game-panel__counters">
+            <li>
+              <picture>
+                <img src="./../assets/img/game/1.webp" alt="" />
+              </picture>
+              <span>2/15</span>
+            </li>
+            <li>
+              <picture class="active">
+                <img src="./../assets/img/game/2.webp" alt="" />
+              </picture>
+              <span>4/15</span>
+            </li>
+            <li>
+              <picture>
+                <img src="./../assets/img/game/3.webp" alt="" />
+              </picture>
+              <span>3/15</span>
+            </li>
+            <li>
+              <picture>
+                <img src="./../assets/img/game/4.webp" alt="" />
+              </picture>
+              <span>7/15</span>
+            </li>
+          </ul>
+          <footer class="footer">
+            <a href="#" class="link dark">Вернуться в розыгрыш</a>
+            <button class="sound-button sound-button--yellow" data-sound="./../assets/music/game.mp3"></button>
+          </footer>
+        </div>
+      </section>
     </main>
 
     <script src="./../assets/js/scripts.js" type="module"></script>
