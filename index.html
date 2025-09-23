@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Игра призовая реальность" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.min.css" />
+    <title>Игра призовая реальность</title>
+  </head>
+  <body class="body">
+    <!--PRELOADER-->
+    <div class="preloader" data-preloader>
+      <div class="preloader__content">
+        <div class="preloader__video">
+          <video autoplay loop muted playsinline preload="auto">
+            <source src="./assets/img/preloader.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <span>Открываем<br />призовую<br />реальность</span>
+      </div>
+    </div>
+
+    <main class="main main--intro">
+      <section class="section section--main">
+        <h1 class="title title--h1">Открой <br />призовую <br />реальность</h1>
+
+        <nav class="navigation navigation--main">
+          <ul>
+            <li class="have-arrow">собирай <br />упаковки и логотипы</li>
+            <li class="have-arrow">Выходи в топ</li>
+            <li>Забирай призы</li>
+          </ul>
+
+          <a href="./rules" class="button">ИГРАТЬ</a>
+
+          <footer class="footer">
+            <a href="#">Вернуться в розыгрыш</a>
+            <button class="sound-button" data-sound="./assets/music/intro.mp3"></button>
+          </footer>
+        </nav>
+      </section>
+    </main>
+
+    <script src="./assets/js/scripts.js" type="module"></script>
+  </body>
+</html>

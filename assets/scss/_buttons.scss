@@ -1,0 +1,42 @@
+.button {
+  display: inline-flex;
+  gap: 20px;
+  overflow: hidden;
+  z-index: 1;
+  min-height: 50px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--white);
+  font-family: var(--bold);
+  padding: 10px 40px;
+  z-index: 1;
+  user-select: none;
+  outline: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background: var(--color);
+
+  &.button--white {
+    background: var(--white);
+    color: var(--color);
+  }
+
+  &.full {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  &.small {
+    font-size: 24px;
+    min-height: 40px;
+    padding: 10px 20px;
+    @media (max-width: 359px) {
+      padding: 10px 10px;
+      font-size: 26px;
+    }
+  }
+}

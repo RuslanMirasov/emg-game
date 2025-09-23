@@ -1,0 +1,32 @@
+.section--main {
+  margin-bottom: 0px;
+  justify-content: flex-end;
+  max-width: 100%;
+  background: #00113f url('../img/main/bg.webp') no-repeat center bottom;
+  background-size: 500px auto;
+
+  .title {
+    display: flex;
+    flex: 1;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 0px;
+    padding-bottom: 255px;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    position: absolute;
+
+    background-size: 100% auto;
+    bottom: 180px;
+  }
+}
