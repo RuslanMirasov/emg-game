@@ -4,11 +4,11 @@
   border-radius: 14px;
   width: 280px;
   height: 28px !important;
-  background: #7fa9e7;
+  background: #fff;
   text-align: center;
   border: none;
   margin: 0;
-  margin-bottom: 13px;
+  margin-top: 20px;
   &.is-open {
     border-radius: 14px 14px 0px 0px;
   }
@@ -22,14 +22,12 @@
 // Видимая часть select (заголовок)
 .choices__inner {
   width: 280px;
-
   border: none;
   padding: 0;
   border-radius: 0px 0px 14px 14px;
   background: none;
   font-size: 14px;
-  font-family: var(--400);
-  font-weight: 400;
+  font-weight: 600;
   color: var(--color);
   overflow: hidden;
 }
@@ -37,7 +35,6 @@
 // Обёртка для списка опций
 .choices__list {
   border: none !important;
-
   overflow: hidden;
   padding: 0px;
   background: none;
@@ -45,12 +42,12 @@
     background: none !important;
     // ТУТ ДЕЛАТЬ КАЛЕНДАЛЬ
     padding: 0;
-
     height: 28px;
     > .choices__item {
       padding: 5px !important;
-      height: 28px;
+      height: 36px;
       margin-top: 0;
+      border-bottom: 1px solid red;
     }
   }
 }
@@ -60,11 +57,10 @@
   border-radius: 0px 0px 14px 14px !important;
   border: none !important;
   font-size: 14px;
-  font-family: var(--400);
-  font-weight: 400;
+  font-weight: 600;
   color: var(--color);
   text-align: center;
-  background: #7fa9e7 !important;
+  background: #fff !important;
   &.is-active {
     background: none;
   }
@@ -77,7 +73,7 @@
   box-shadow: none;
   width: calc(100% - 24px);
   margin: 0 auto;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   &.choices__item--selectable {
     padding: 0;
   }

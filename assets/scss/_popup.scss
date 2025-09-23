@@ -21,7 +21,7 @@ body.locked {
   z-index: 1000;
   overflow-x: hidden;
   overflow-y: scroll;
-  overscroll-behavior: none;
+  overscroll-behavior: auto;
   -webkit-overflow-scrolling: touch;
 
   transition: opacity $popup_transition ease-in-out 0s, visibility $popup_transition ease-in-out 0s;
@@ -115,7 +115,7 @@ body.locked {
 
 .popup-content {
   width: 100%;
-  max-width: 340px;
+  max-width: 344px;
   user-select: none;
   border-radius: 20px;
   background: var(--white);
@@ -127,14 +127,11 @@ body.locked {
   text-transform: uppercase;
   font-size: 20px;
   line-height: 1.2;
-  font-family: var(--600);
+  font-weight: 600;
 }
 
 .popup__subtitle {
   text-align: center;
   margin-bottom: 20px;
   font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  font-family: var(--regular);
 }

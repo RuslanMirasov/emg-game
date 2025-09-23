@@ -1,65 +1,80 @@
 .section--scores {
-  max-width: 450px;
-  padding: 16px;
-  @media (max-width: 359px) {
-    padding: 40px 12px 32px 12px;
-  }
+  background: #001136;
   .title {
-    margin-bottom: 13px;
+    margin-top: 20px;
+  }
+  .footer {
+    margin-top: 20px;
   }
 }
 
-.scores,
 .results {
   width: 100%;
+  max-width: 342px;
   border-collapse: collapse;
   text-align: center;
-  font-size: 14px;
-  font-family: var(--400);
+  font-size: 13px;
   color: var(--white);
   font-weight: 400;
+  margin: 20px auto auto auto;
 
   img {
     margin: 0 auto;
   }
 
-  tr {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    &.you {
-      background: var(--color);
+  thead {
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      width: 19px;
+      height: 35px;
+
+      position: absolute;
+      top: 0px;
+    }
+
+    &:before {
+      left: -14px;
+      background: url('../img/table-left-border.webp') no-repeat center center/cover;
+    }
+
+    &:after {
+      right: -14px;
+      background: url('../img/table-right-border.webp') no-repeat center center/cover;
+    }
+
+    tr {
+      border: none;
+      background: url('../img/table-bg.webp') repeat-x center center;
+      background-size: 35px 35px;
+    }
+
+    th {
+      font-size: 12px;
+      height: 35px;
+      font-weight: 400;
+      color: var(--blue);
     }
   }
 
-  thead tr {
-    &:last-child {
-      background: rgba(59, 33, 100, 0.5);
+  tbody {
+    tr {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      &.you {
+        background: #cf9112;
+        border-bottom: none;
+        font-weight: 600;
+      }
+      &.separator {
+        border-bottom: none;
+      }
     }
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-  }
 
-  th {
-    font-size: 13px;
-    padding: 5.5px 4px;
-    opacity: 0.8;
-    @media (max-height: 649px) {
-      padding: 5px 4px;
-    }
-  }
-  td {
-    font-size: 12px;
-    padding: 5.5px 4px;
-    @media (max-height: 649px) {
-      padding: 5px 4px;
-      font-size: 11px;
-    }
-  }
-}
-
-.results {
-  td,
-  th {
-    &:nth-child(2) {
-      text-align: left;
+    td {
+      font-size: 13px;
+      height: 35px;
     }
   }
 }
