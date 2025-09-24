@@ -496,7 +496,7 @@ iframe::-webkit-scrollbar {
 }
 .section--main .title {
   margin-top: 4vh;
-  margin-bottom: 180px;
+  margin-bottom: 280px;
 }
 @media (min-height: 800px) {
   .section--main {
@@ -835,34 +835,38 @@ iframe::-webkit-scrollbar {
 .results img {
   margin: 0 auto;
 }
-.results thead {
-  position: relative;
-}
-.results thead:before, .results thead:after {
-  content: "";
-  width: 19px;
-  height: 35px;
-  position: absolute;
-  top: 0px;
-}
-.results thead:before {
-  left: -14px;
-  background: url("../img/table-left-border.webp") no-repeat center center/cover;
-}
-.results thead:after {
-  right: -14px;
-  background: url("../img/table-right-border.webp") no-repeat center center/cover;
-}
 .results thead tr {
   border: none;
   background: url("../img/table-bg.webp") repeat-x center center;
   background-size: 35px 35px;
 }
 .results thead th {
+  position: relative;
   font-size: 12px;
   height: 35px;
   font-weight: 400;
   color: var(--blue);
+  z-index: 1;
+}
+.results thead th:first-child:before {
+  content: "";
+  width: 19px;
+  height: 35px;
+  left: -12px;
+  background: url("../img/table-left-border.webp") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+.results thead th:last-child:before {
+  content: "";
+  width: 19px;
+  height: 35px;
+  right: -12px;
+  background: url("../img/table-right-border.webp") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  z-index: 0;
 }
 .results tbody tr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);

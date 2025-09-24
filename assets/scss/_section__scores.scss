@@ -23,28 +23,6 @@
   }
 
   thead {
-    position: relative;
-
-    &:before,
-    &:after {
-      content: '';
-      width: 19px;
-      height: 35px;
-
-      position: absolute;
-      top: 0px;
-    }
-
-    &:before {
-      left: -14px;
-      background: url('../img/table-left-border.webp') no-repeat center center/cover;
-    }
-
-    &:after {
-      right: -14px;
-      background: url('../img/table-right-border.webp') no-repeat center center/cover;
-    }
-
     tr {
       border: none;
       background: url('../img/table-bg.webp') repeat-x center center;
@@ -52,10 +30,36 @@
     }
 
     th {
+      position: relative;
       font-size: 12px;
       height: 35px;
       font-weight: 400;
       color: var(--blue);
+      z-index: 1;
+      &:first-child {
+        &:before {
+          content: '';
+          width: 19px;
+          height: 35px;
+          left: -12px;
+          background: url('../img/table-left-border.webp') no-repeat center center/cover;
+          position: absolute;
+          top: 0px;
+          z-index: -1;
+        }
+      }
+      &:last-child {
+        &:before {
+          content: '';
+          width: 19px;
+          height: 35px;
+          right: -12px;
+          background: url('../img/table-right-border.webp') no-repeat center center/cover;
+          position: absolute;
+          top: 0px;
+          z-index: 0;
+        }
+      }
     }
   }
 
