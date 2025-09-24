@@ -376,6 +376,7 @@ iframe::-webkit-scrollbar {
   border: none;
   margin: 0;
   margin-top: 20px;
+  z-index: 10;
 }
 .choices.is-open {
   border-radius: 14px 14px 0px 0px;
