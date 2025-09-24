@@ -778,13 +778,11 @@ iframe::-webkit-scrollbar {
 }
 
 .level-iframe {
+  display: flex;
   width: 100%;
-  max-width: 884px;
-  height: auto;
-  flex: 1;
+  height: calc(100svh - 214px);
   position: relative;
-  left: 0px;
-  top: 0px;
+  max-width: 884px;
   z-index: 1;
   border: none;
 }
