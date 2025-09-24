@@ -11,8 +11,8 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 16px;
-  padding: 30px 0px 20px 0px;
+  gap: 14px;
+  padding: 20px 0px 20px 0px;
   margin: auto;
   > li {
     display: flex;
@@ -119,8 +119,8 @@
       }
     }
     &:nth-child(4) {
-      width: 325px;
-      height: 171px;
+      width: 300px;
+      height: 158px;
       background: url('../img/rules/rule4-bg.webp') no-repeat center center/cover;
       &:before {
         right: 100%;
@@ -139,4 +139,63 @@
   align-items: flex-end;
   align-content: flex-end;
   gap: 20px;
+}
+
+@media (max-height: 667px) {
+  .rules {
+    gap: 10px;
+    padding: 20px 0px 20px 0px;
+    > li {
+      gap: 4px 12px;
+      p {
+        font-size: 14px;
+      }
+      &:before {
+        content: '';
+        width: 40px;
+        height: 100px;
+      }
+
+      &:nth-child(1) {
+        width: 281px;
+        height: 130px;
+        &:before {
+          margin-bottom: -18px;
+        }
+      }
+      &:nth-child(2) {
+        width: 250px;
+        height: 137px;
+        img {
+          width: 124px;
+          height: 64px;
+        }
+        &:before {
+          margin-bottom: -18px;
+        }
+      }
+      &:nth-child(3) {
+        width: 220px;
+        height: 77px;
+        &:before {
+          margin-bottom: -18px;
+          margin-left: -14px;
+        }
+        img {
+          width: 48px;
+          height: 48px;
+        }
+      }
+      &:nth-child(4) {
+        width: 250px;
+        height: 131px;
+        background: url('../img/rules/rule4-bg.webp') no-repeat center center/cover;
+        &:before {
+          right: 100%;
+          margin-right: -17px;
+          margin-bottom: -20px;
+        }
+      }
+    }
+  }
 }

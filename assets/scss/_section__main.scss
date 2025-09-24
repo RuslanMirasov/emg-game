@@ -26,3 +26,15 @@
     }
   }
 }
+
+@media (max-height: 667px) {
+  .section--main {
+    background-size: 420px auto;
+
+    .title {
+      margin-top: 20px;
+      margin-bottom: 180px;
+      font-size: 26px;
+    }
+  }
+}

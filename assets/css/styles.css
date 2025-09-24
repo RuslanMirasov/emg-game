@@ -507,6 +507,16 @@ iframe::-webkit-scrollbar {
   }
 }
 
+@media (max-height: 667px) {
+  .section--main {
+    background-size: 420px auto;
+  }
+  .section--main .title {
+    margin-top: 20px;
+    margin-bottom: 180px;
+    font-size: 26px;
+  }
+}
 .section--rules {
   background: url("../img/rules/bg.webp") no-repeat center center/cover;
 }
@@ -520,8 +530,8 @@ iframe::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 16px;
-  padding: 30px 0px 20px 0px;
+  gap: 14px;
+  padding: 20px 0px 20px 0px;
   margin: auto;
 }
 .rules > li {
@@ -627,8 +637,8 @@ iframe::-webkit-scrollbar {
   height: 56px;
 }
 .rules > li:nth-child(4) {
-  width: 325px;
-  height: 171px;
+  width: 300px;
+  height: 158px;
   background: url("../img/rules/rule4-bg.webp") no-repeat center center/cover;
 }
 .rules > li:nth-child(4):before {
@@ -647,6 +657,63 @@ iframe::-webkit-scrollbar {
   gap: 20px;
 }
 
+@media (max-height: 667px) {
+  .rules {
+    gap: 10px;
+    padding: 20px 0px 20px 0px;
+  }
+  .rules > li {
+    gap: 4px 12px;
+  }
+  .rules > li p {
+    font-size: 14px;
+  }
+  .rules > li:before {
+    content: "";
+    width: 40px;
+    height: 100px;
+  }
+  .rules > li:nth-child(1) {
+    width: 281px;
+    height: 130px;
+  }
+  .rules > li:nth-child(1):before {
+    margin-bottom: -18px;
+  }
+  .rules > li:nth-child(2) {
+    width: 250px;
+    height: 137px;
+  }
+  .rules > li:nth-child(2) img {
+    width: 124px;
+    height: 64px;
+  }
+  .rules > li:nth-child(2):before {
+    margin-bottom: -18px;
+  }
+  .rules > li:nth-child(3) {
+    width: 220px;
+    height: 77px;
+  }
+  .rules > li:nth-child(3):before {
+    margin-bottom: -18px;
+    margin-left: -14px;
+  }
+  .rules > li:nth-child(3) img {
+    width: 48px;
+    height: 48px;
+  }
+  .rules > li:nth-child(4) {
+    width: 250px;
+    height: 131px;
+    background: url("../img/rules/rule4-bg.webp") no-repeat center center/cover;
+  }
+  .rules > li:nth-child(4):before {
+    right: 100%;
+    margin-right: -17px;
+    margin-bottom: -20px;
+  }
+}
 .section--game {
   max-width: 884px;
 }
