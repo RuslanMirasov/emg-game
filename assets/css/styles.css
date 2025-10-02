@@ -793,6 +793,10 @@ iframe::-webkit-scrollbar {
 .game-panel .footer a {
   margin-top: 5px;
 }
+.game-panel .footer .sound-button {
+  right: 5px;
+  bottom: 15px;
+}
 
 .game-panel__counters {
   display: flex;
@@ -837,12 +841,12 @@ iframe::-webkit-scrollbar {
 .game-panel__counters li picture.active:before {
   content: "";
   display: block;
-  width: 16px;
-  height: 16px;
-  border-radius: 16px;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
   position: absolute;
-  right: 10px;
-  top: -6px;
+  right: 9px;
+  top: -4px;
   flex-shrink: 0;
   background: url("../img/svg/ok.svg") no-repeat center center;
   background-size: 100% 100%;
@@ -857,6 +861,14 @@ iframe::-webkit-scrollbar {
   max-width: 884px;
   z-index: 1;
   border: none;
+}
+
+.test000 {
+  display: block;
+  background: url("../img/preloader.webp") no-repeat center center;
+  background-size: 300% auto;
+  width: 100%;
+  height: calc(100vh - 172px);
 }
 
 .body.body--level {
